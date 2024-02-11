@@ -43,10 +43,10 @@
         <div class="portfolio-item-individual">
     <p> This data was obtatined from Tidy Tuesday package. I visualised if the longer movie times correlate with lower ratings using ggplot. I was interested in finding out the common words in the titles of the movies which were in the Christmas category. I used the <b>unnest_tokens</b> to get one word per row and used <b> anti-join</b> function to get rid of stop words. I used the wordcloud package to construct a word cloud. </p>
         <div class="portfolio-thesis-imgs">
-                <img src="img/graph2.png" class="portfolio-thesis-prediction-img" alt="">
-                <p> The dataset was obtained from TidyTuesday package. The dataset pertains to the House Elections results. I generated the US map to highlight the states in which Democrats or Republicans won. The important thing during this exercise was to be mindful of the exclusion of ALaska and Hawaii in the map.    </p>
-                <img src="img/map.png"class="portfolio-thesis-results-img" alt="">
-                <p>  The second graph shows the results of our experiments 1b and 1c. The results support our first hypothesis as our analysis showed signifcant differences for the case and semantic condition but not for the self-reference condition  </p>
+                <img src="img/cloud.png" class="portfolio-thesis-prediction-img" alt="">
+                
+                <img src="img/bigram.png"class="portfolio-thesis-results-img" alt="">
+                <p> In order to see what words occur frequently with the word "Christmas", I constructed a bigram  consisting of words which are adjacent to "Christmas". I first converted the dataframe to a Corpus and removed stop words using the functions from the package <b>tm</b>. It is important to make sure the column is character and not factor. Using <b> unnest_tokens</b>, I converted the movie title dataframe to two words per row. I counted the numbe of times those pairs occured. <b> Bigraph </b> was used from the package <b>igraph</b> to construct a bigram. </p>
             </div>
            
         </div>
@@ -54,7 +54,7 @@
         
         <section class="portfolio-btn">
             <div>  <a href="index.html#work" class="portfolio-btn-work"> <i class='bx bxs-briefcase'> </i> My Work</a></div>
-            <div>  <a href="http://www.crumplab.com/self-reference/vignettes/data-analysis/E1_combined.html" class="portfolio-btn-git"> <i class='bx bxl-github'></i> View Git repo</a></div>
+            <div>  <a href="https://sass09.github.io/IMBD-Movie-Dataset/" class="portfolio-btn-git"> <i class='bx bxl-github'></i> View Git repo</a></div>
                 </section>
         <footer class="footer">
       
