@@ -329,7 +329,7 @@ header {
 } 
 
  .section__subtitle--intro {
-    display: inline-block;
+    display: inline-flex
 } 
 
 
