@@ -329,7 +329,7 @@ header {
 } 
 
  .section__subtitle--intro {
-    display: inline-flex
+    display: inline-block
 } 
 
 
@@ -359,7 +359,7 @@ header {
          grid-column: -1 / 2;
         grid-row: 2;
          
-        text-align: right;
+        text-align: center;
         position: relative;
         left: -1.5em;
         width: calc(100% + .5em);
